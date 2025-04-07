@@ -16,11 +16,6 @@ class CatalogPage extends Page {
         return $$('~store item price');
     }
 
-    public async selectProductByIndex(productIndex: number) {
-        const productItems = this.productItems;
-        await productItems[productIndex].click();
-    }
-
     private get sortButton() {
         return $('~sort button');
     }
@@ -39,6 +34,11 @@ class CatalogPage extends Page {
 
     private get priceDescending() {
         return $('~priceDesc');
+    }
+
+    public async selectProductByIndex(productIndex: number) {
+        const productItems = this.productItems;
+        await productItems[productIndex].click();
     }
 
     public async getProductName(index: number) {
@@ -61,7 +61,7 @@ class CatalogPage extends Page {
     }
 
     public async getProductsPrices() {
-        const priceElements = await $$('~store item price');
+        const priceElements = this.productPrices;
         const prices: number[] = [];
     
         for (const element of priceElements) {
