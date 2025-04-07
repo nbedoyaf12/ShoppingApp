@@ -1,8 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","4711","Sort by namedescending","","Mon Apr 07 10:22:22 COT 2025","passed","Mon Apr 07 10:22:26 COT 2025","","Sort filter","",""
-"","4935","Add more than 1 product to the cart","","Mon Apr 07 10:22:10 COT 2025","broken","Mon Apr 07 10:22:15 COT 2025","","Cart Tests","",""
-"","4910","Sort by pricedescending","","Mon Apr 07 10:22:30 COT 2025","passed","Mon Apr 07 10:22:35 COT 2025","","Sort filter","",""
-"","3981","Sort by priceascending","","Mon Apr 07 10:22:26 COT 2025","passed","Mon Apr 07 10:22:30 COT 2025","","Sort filter","",""
-"","5225","Sort by nameascending","","Mon Apr 07 10:22:16 COT 2025","passed","Mon Apr 07 10:22:22 COT 2025","","Sort filter","",""
-"","1736","Remove all product from the cart","","Mon Apr 07 10:22:15 COT 2025","passed","Mon Apr 07 10:22:16 COT 2025","","Cart Tests","",""
-"","456","Checkout flow","","Mon Apr 07 10:22:35 COT 2025","broken","Mon Apr 07 10:22:36 COT 2025","","Checkout","",""

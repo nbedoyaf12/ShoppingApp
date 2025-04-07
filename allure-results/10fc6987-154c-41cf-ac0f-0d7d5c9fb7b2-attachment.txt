@@ -1,4 +1,0 @@
-{
-  "using": "accessibility id",
-  "value": "Address Line 2 input field"
-}
