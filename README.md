@@ -2,7 +2,7 @@
 
 This project is a mobile automation framework designed to execute end-to-end tests on an Android and iOS shopping app. The application files for both operating systems are included in the repository.
 
-##Tecnologies:
+## Tecnologies:
 - Appium
 - WebdriverIO with @wdio/appium-service
 - Typescript
