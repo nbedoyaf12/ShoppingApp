@@ -1,0 +1,4 @@
+{
+  "using": "accessibility id",
+  "value": "Expiration Date* input field"
+}
