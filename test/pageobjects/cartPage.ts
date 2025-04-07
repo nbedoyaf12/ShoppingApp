@@ -37,18 +37,19 @@ class CartPage extends Page {
     }
 
     public async removeAllProducts() {
-        const removeButtons = await this.removeItemButtons;
+        let removeButtons = await this.removeItemButtons;
     
-        for (const button of removeButtons) {
-            await button.waitForDisplayed();
-            await button.click();
+        while (await removeButtons.length > 0) {
+            await removeButtons[0].waitForDisplayed({ timeout: 5000 });
+            await removeButtons[0].click();    
+            removeButtons = await this.removeItemButtons; 
         }
     }
 
-    public async getNoItemMessage(){
+    public async getNoItemMessage() {
         return await this.noItemMessage;
     }
-    
+
 }
 
 export default new CartPage();

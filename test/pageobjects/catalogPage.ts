@@ -42,9 +42,9 @@ class CatalogPage extends Page {
     }
 
     public async getProductName(index: number) {
+        await this.productNames[0].waitForDisplayed();
         const names = await this.productNames;
         const name = names[index];
-        console.log(index)
         await name.waitForDisplayed({ timeout: 10000 });
         return await name.getText();
     }
@@ -60,16 +60,17 @@ class CatalogPage extends Page {
         return productNames;
     }
 
-    public async getProductsPrices() {
-        const priceElements = this.productPrices;
+    public async getProductsPrices(): Promise<number[]> {
+        const priceElements = await this.productPrices;
         const prices: number[] = [];
-    
+
         for (const element of priceElements) {
+            await element.waitForDisplayed({ timeout: 10000 });
             const text = await element.getText();
             const price = parseFloat(text.replace('$', ''));
             prices.push(price);
         }
-    
+
         return prices;
     }
 
